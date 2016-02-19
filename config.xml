@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.mortgage.sample" version="1.0.6" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>Mortgage Calculator</name>
+    <description>
+        This is a simple mortgage calculator that allows you to calculate payments including PMI and Taxes
+    </description>
+    <author email="mike@msdwebdesigns.com" href="http://msdwebdesigns.com">
+        Mike Daugherty
+    </author>
+    <content src="index.html" />
+    <preference name="permissions" value="none" />
+    <preference name="orientation" value="default" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="true" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-minSdkVersion" value="14" />
+    <preference name="android-installLocation" value="auto" />
+    <gap:plugin name="org.apache.cordova.device-orientation" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <icon src="www/icon.png" />
+    <platform name="android">
+    <!-- you can use any density that exists in the Android project -->
+    
+    <splash src="www/spashscreen/splash-port-hdpi.png" density="port-hdpi"/>
+    <splash src="www/spashscreen/splash-port-ldpi.png" density="port-ldpi"/>
+    <splash src="www/spashscreen/splash-port-mdpi.png" density="port-mdpi"/>
+    <splash src="www/spashscreen/splash-port-xhdpi.png" density="port-xhdpi"/>
+</platform>
+    <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+</widget>
