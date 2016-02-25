@@ -31,6 +31,10 @@
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/splash-port-mdpi.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/splash-port-hdpi.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/splash-port-xhdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-ldpi" src="res/splash-land-ldpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-mdpi" src="res/splash-land-mdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-hdpi" src="res/splash-land-hdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-xhdpi" src="res/splash-land-xhdpi.png" />
     <gap:splash src="www/splash.png" /> 
     <preference name="SplashScreenDelay" value="4000" />
     <access origin="*" />
