@@ -24,15 +24,15 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
-    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <!-- <gap:plugin name="org.apache.cordova.splashscreen" /> -->
     <icon src="www/icon.png" />
-    <preference name="SplashScreen" value="screen">
+<!--     <preference name="SplashScreen" value="screen">
     <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/splash-port-ldpi.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/splash-port-mdpi.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/splash-port-hdpi.png" />
     <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/splash-port-xhdpi.png" />
     <gap:splash src="www/splash.png" /> 
-    <preference name="SplashScreenDelay" value="4000" />
+    <preference name="SplashScreenDelay" value="4000" /> -->
     <access origin="*" />
     <plugin name="cordova-plugin-whitelist" version="1" />
     <allow-intent href="http://*/*" />
