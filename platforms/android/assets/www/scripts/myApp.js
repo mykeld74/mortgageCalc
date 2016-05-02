@@ -31,13 +31,15 @@ app.controller('mortgageCtrl', function($scope) {
         if ($scope.mortData.pmi_rate > 0) {
             pmi_rate = $scope.mortData.pmi_rate / 100;
         }
-        if ($scope.mortData.tax_rate > 0) {
-            tax_rate = $scope.mortData.tax_rate / 100;
+        if ($scope.mortData.tax_rate < 100) {
+            tax_rate = ($scope.mortData.tax_rate / 100) * housePrice;
+        }else{
+            tax_rate = $scope.mortData.tax_rate;
         }
         $scope.loanAmount = housePrice - downPayment;
         loanAmount = $scope.loanAmount;
         pmi = (loanAmount * pmi_rate) / 12;
-        tax = (loanAmount * tax_rate) / 12;
+        tax = (tax_rate) / 12;
         payment = (loanAmount * combo) + pmi + tax;
         if ((loanAmount / housePrice) > 0.8) {
             $scope.pmi_required = true;

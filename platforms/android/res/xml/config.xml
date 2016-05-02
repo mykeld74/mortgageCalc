@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.mortgage.sample" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.mortgage.sample" version="1.0.8" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="Whitelist">
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
@@ -20,7 +20,7 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
+    <preference name="stay-in-webview" value="true" />
     <preference name="ios-statusbarstyle" value="black-opaque" />
     <preference name="detect-data-types" value="true" />
     <preference name="exit-on-suspend" value="false" />
@@ -29,13 +29,20 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
-    <gap:plugin name="org.apache.cordova.device" />
     <gap:plugin name="org.apache.cordova.device-orientation" />
-    <icon src="icon.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="www/res/screen/android/screen-ldpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="www/res/screen/android/screen-mdpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="www/res/screen/android/screen-hdpi-portrait.png" />
-    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="www/res/screen/android/screen-xhdpi-portrait.png" />
+    <gap:plugin name="org.apache.cordova.splashscreen" />
+    <icon src="www/icon.png" />
+    <preference name="SplashScreen" value="screen" />
+    <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="res/splash-port-ldpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="res/splash-port-mdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="res/splash-port-hdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="res/splash-port-xhdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-ldpi" src="res/splash-land-ldpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-mdpi" src="res/splash-land-mdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-hdpi" src="res/splash-land-hdpi.png" />
+    <gap:splash gap:platform="android" gap:qualifier="land-xhdpi" src="res/splash-land-xhdpi.png" />
+    <gap:splash src="www/splash.png" />
+    <preference name="SplashScreenDelay" value="4000" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
